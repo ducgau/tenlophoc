@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ten lop hoc</title>
+</head>
+<body>
+<script>
+    function ten_Lop(str) {
+        ten =  /^[A,C,P]+[0-9]{4}[G,H,I,K,L,M]+$/ ;
+        if (ten.test(str)) {
+            return true;
+        }
+        return "nhap lai ten";
+    }
+    let ten = prompt("nhap ten");
+    alert(ten_Lop(ten));
+
+</script>
+</body>
+</html>
